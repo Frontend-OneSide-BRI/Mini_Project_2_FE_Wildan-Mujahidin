@@ -4,8 +4,11 @@ import { Footer } from "../components/Footer";
 import { SideNav } from "../components/SideNav";
 import { BiSearch } from "react-icons/bi";
 import { Navbar1 } from "../components/Navbar1";
+import { dataCarousel } from "../database/images.js";
+import SimpleSlider from "../components/SimpleSlider";
 
 export const Homepage = () => {
+  console.log(dataCarousel);
   return (
     <Layout>
       <SideNav>
@@ -23,8 +26,9 @@ export const Homepage = () => {
             />
           </div>
         </div>
-
         <Navbar1 />
+
+        <SimpleSlider />
         <Footer />
       </SideNav>
     </Layout>
