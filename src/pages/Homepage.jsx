@@ -4,11 +4,9 @@ import { Footer } from "../components/Footer";
 import { SideNav } from "../components/SideNav";
 import { BiSearch } from "react-icons/bi";
 import { Navbar1 } from "../components/Navbar1";
-import { dataCarousel } from "../database/images.js";
 import SimpleSlider from "../components/SimpleSlider";
-
+import { dataImages } from "../database/images";
 export const Homepage = () => {
-  console.log(dataCarousel);
   return (
     <Layout>
       <SideNav>
@@ -29,6 +27,12 @@ export const Homepage = () => {
         <Navbar1 />
 
         <SimpleSlider />
+
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-[-1rem]">
+          {dataImages.map((data) => {
+            return <img key={data.id} src={data.img} alt="" />;
+          })}
+        </div>
         <Footer />
       </SideNav>
     </Layout>
