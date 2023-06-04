@@ -17,7 +17,6 @@ export const Navbar2 = ({ searchQuery }) => {
   const handleCategorySelection = (category) => {
     setSelectedCategory(category);
   };
-  console.log(searchImages);
   return (
     <>
       {searchQuery ? null : (

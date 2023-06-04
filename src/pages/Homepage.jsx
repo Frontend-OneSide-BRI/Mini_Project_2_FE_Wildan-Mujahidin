@@ -28,6 +28,7 @@ export const Homepage = () => {
             );
           })}
         </div>
+
         <Footer />
       </SideNav>
     </Layout>

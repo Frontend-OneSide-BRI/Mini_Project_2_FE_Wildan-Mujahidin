@@ -22,6 +22,24 @@ import GettyImages18 from "../assets/images/gallery/GettyImages-1325997469.jpg";
 import GettyImages19 from "../assets/images/gallery/GettyImages-1379810322.jpg";
 import GettyImages20 from "../assets/images/gallery/GettyImages-1334959064.jpg";
 
+export const users = [
+  {
+    id: 1,
+    email: "willy@gmail.com",
+    password: 123,
+  },
+  {
+    id: 2,
+    email: "willy2@gmail.com",
+    password: 321,
+  },
+  {
+    id: 3,
+    email: "willy3@gmail.com",
+    password: 111,
+  },
+];
+
 export const dataCarousel = [
   {
     id: 1,

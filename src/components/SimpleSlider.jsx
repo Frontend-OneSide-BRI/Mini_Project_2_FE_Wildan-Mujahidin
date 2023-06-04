@@ -13,7 +13,7 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings}>
       {dataCarousel.map((data) => (
-        <div className="h-fit overflow-x-hidden">
+        <div className="h-fit overflow-x-hidden" key={data.id}>
           <img src={data.img} alt="" className="w-full h-full" />
         </div>
       ))}

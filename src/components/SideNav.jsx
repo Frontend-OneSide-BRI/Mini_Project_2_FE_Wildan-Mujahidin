@@ -8,6 +8,7 @@ import logo from "../assets/logo.svg";
 export const SideNav = ({ children }) => {
   const [collapsed] = useState(false);
   const [toggled, setToggled] = useState(false);
+
   return (
     <div style={{ display: "flex", height: "100%" }}>
       <Sidebar
@@ -37,11 +38,22 @@ export const SideNav = ({ children }) => {
           <img src={logo} width={"120rem"} alt="" />
           <div className="flex items-center gap-3">
             <IoMdCart size={18} />
-            <FaUserAlt size={13} />
+            <FaUserAlt
+              size={13}
+              onClick={() => window.my_modal_1.showModal()}
+            />
           </div>
         </div>
         {children}
       </div>
+      <dialog id="my_modal_1" className="modal">
+        <form method="dialog" className="modal-box">
+          <h3 className="font-bold text-lg text-center">Login Success</h3>
+          <div className="modal-action">
+            <button className="btn">Close</button>
+          </div>
+        </form>
+      </dialog>
     </div>
   );
 };
