@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Layout } from "../components/Layout";
 import { Footer } from "../components/Footer";
 import { SideNav } from "../components/SideNav";
@@ -6,6 +6,7 @@ import { BiSearch } from "react-icons/bi";
 import { NavbarGallery } from "../components/Navbar1";
 import { Navbar2 } from "../components/Navbar2";
 export const Gallery = () => {
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <Layout>
       <SideNav>
@@ -23,11 +24,13 @@ export const Gallery = () => {
               type="text"
               className="w-full md:w-[58rem] h-14 bg-white pl-20 border border-black"
               placeholder="Search the world’s best creative photos and images"
+              value={searchQuery}
+              onChange={(event) => setSearchQuery(event.target.value)}
             />
           </div>
         </div>
 
-        <Navbar2 />
+        <Navbar2 searchQuery={searchQuery} />
 
         <Footer />
       </SideNav>

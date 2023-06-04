@@ -12,3 +12,30 @@ a:hover {
   scale: 1.2;
   cursor: pointer;
 }
+
+.album img {
+  transition: transform 0.3s;
+}
+
+.album:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  border-radius: 9999px;
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: #c1c1c1;
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 9999px;
+  background: #555;
+}

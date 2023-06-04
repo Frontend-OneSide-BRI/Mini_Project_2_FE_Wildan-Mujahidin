@@ -17,12 +17,18 @@ export const SideNav = ({ children }) => {
         breakPoint="all"
       >
         <Menu>
-          <SubMenu label="Charts">
-            <MenuItem> Pie charts </MenuItem>
-            <MenuItem> Line charts </MenuItem>
+          <SubMenu label="CREATIVE">
+            <MenuItem> Collections </MenuItem>
+            <MenuItem> Project #ShowUs </MenuItem>
+            <MenuItem> Creative Insights </MenuItem>
           </SubMenu>
-          <MenuItem> Documentation </MenuItem>
-          <MenuItem> Calendar </MenuItem>
+          <MenuItem> EDITORIAL </MenuItem>
+          <SubMenu label="VIDEO">
+            <MenuItem> BBC Motion Gallery </MenuItem>
+            <MenuItem> NBC News Archives </MenuItem>
+          </SubMenu>
+          <MenuItem> MUSIC </MenuItem>
+          <MenuItem> BLOG </MenuItem>
         </Menu>
       </Sidebar>
       <div className="flex flex-col w-full overflow-x-hidden">
