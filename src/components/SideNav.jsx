@@ -26,7 +26,7 @@ export const SideNav = ({ children }) => {
         </Menu>
       </Sidebar>
       <div className="flex flex-col w-full overflow-x-hidden">
-        <div className="flex justify-between w-full align-middle items-center px-8 py-5">
+        <div className="flex justify-between w-full align-middle items-center px-8 py-5 border-b">
           <GiHamburgerMenu size={30} onClick={() => setToggled(!toggled)} />
           <img src={logo} width={"120rem"} alt="" />
           <div className="flex items-center gap-3">
